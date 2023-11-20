@@ -134,7 +134,7 @@ function Main() {
                 <ListCard
                   key={index}
                   onClick={() => {
-                    navi(item.id, { state: { id: item.id } });
+                    navi(item.id, { state: { id: item.id, letter } });
                   }}
                 >
                   <ListCardImg

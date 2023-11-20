@@ -8,7 +8,9 @@ import { useNavigate } from "../../node_modules/react-router-dom/dist/index";
 function Detail() {
   const { state } = useLocation();
   const { id } = state;
+  const { letter } = state;
   console.log(id);
+  console.log(letter);
 
   const navi = useNavigate();
 
@@ -22,7 +24,7 @@ function Detail() {
         Main
       </MainBtn>
       <DetailDiv>
-        {fakeData
+        {letter
           .filter((e) => {
             return e.id == id;
           })
